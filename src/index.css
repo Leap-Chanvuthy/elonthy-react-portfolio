@@ -19,7 +19,6 @@ html body {
 
 .home {
     font-family: 'Mukta', sans-serif;
-    padding: 3rem;
 }
 
 .context span {
@@ -28,30 +27,21 @@ html body {
 
 .photo {
   background-color: #e8dcd2;
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 350px;
   border-radius: 65% 35% 56% 44% / 30% 30% 70% 70% ;
-  /* border-radius: 60% 40% 69% 31% / 19% 48% 52% 81% ; */
-  /* border: 5px solid rgb(176, 165, 69); */
   overflow: hidden;
 }
   
   @media (min-width: 481px) and (max-width: 768px) {
-    .home-container {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
+    .photo {
+      background-color: #e8dcd2;
+      width: 150px;
+      height: 220px;
+      border-radius: 65% 35% 56% 44% / 30% 30% 70% 70% ;
+      overflow: hidden;
     }
+      
   }
   
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* This CSS will apply to devices with a width of 769px to 1024px */
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1200px) {
-    /* This CSS will apply to devices with a width of 1025px to 1200px */
-  }
-  
-  @media (min-width: 1201px) {
-    /* This CSS will apply to devices with a width of 1201px or more */
-  }
   
