@@ -43,7 +43,7 @@ const Navbar = () => {
                     />
                     )}
                 </div>
-                <ul className={`${openNavBar ? 'grid grid-cols-1' : 'hidden '} text-col3 text-lg justify-items-center bg-col7 rounded-lg px-2 py-4 gap-3 transition duration-1000 ease-in-out`}>
+                <ul className={`${openNavBar ? 'grid grid-cols-1' : 'hidden '} text-col3 text-lg justify-items-center bg-col7 px-2 py-4 gap-3 transition duration-1000 ease-in-out`}>
                     <Link to="/" className="px-5 hover:text-col6 hover:border-b-2">Home</Link>
                     <Link to="/blog" className="px-5 hover:text-col6 hover:border-b-2"> Blogs</Link>
                     <Link to="contact" className="px-5 hover:text-col6 hover:border-b-2">Contact</Link>
