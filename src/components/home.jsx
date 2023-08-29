@@ -17,7 +17,7 @@ const Home = () => {
                 <div className="">
                     <div className="photo border-x-4 border-y-4 border-col7 py-10 flex justify-center">
                         <div className="avatar flex justify-center items-center">
-                            <img src="../avatar2.jpg" className="overflow-hidden object-cover" alt="avatar" />
+                            <img src="../avatar3.png" className=" max-w-sm overflow-hidden object-cover" alt="avatar" />
                         </div>
                     </div>
                 </div>

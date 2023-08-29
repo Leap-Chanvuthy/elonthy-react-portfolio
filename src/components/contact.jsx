@@ -12,17 +12,19 @@ const Contact = () => {
         deleteSpeed : 200
     })
 
-    const [name , setName] = useState('');
-    const [email , setEmail] = useState('');
-    const [message , setMessage] = useState('');
+    const [name , setName] = useState(" ");
+    const [email , setEmail] = useState(" ");
+    const [message , setMessage] = useState(" ");
     const handleSend = (e) => {
         e.preventDefault();
         emailjs.sendForm ('service_a8ecrg2' , 'template_3x9274k' , e.target , 'AGTWVwMYfFNJ5mnoJ')
             .then ((respone) => {
-                console.log ('Email send : ' , respone);
-                setName('');
-                setEmail('');
-                setMessage('');
+         
+                    console.log ('Email send : ' , respone);
+                    setName(" ");
+                    setEmail(" ");
+                    setMessage(" ");
+               
             })
             .catch((error) => {
                 console.log ('Failed sending email : ' , error);
@@ -32,7 +34,7 @@ const Contact = () => {
   return (
     <div>
         <div className="grid lg:grid-cols-2 sm:grid-cols-1  justify-items-center lg:px-40 lg:py-10 sm:px-20 sm:py-3">
-            <div class="max-w-xs mx-auto bg-white border-2 border-col7 shadow-md rounded-full overflow-hidden">
+            <div class="max-w-xs bg-white border-2 border-col7 shadow-md rounded-full overflow-hidden">
             <img
                 src="../avatar2.jpg"
                 alt="Image"

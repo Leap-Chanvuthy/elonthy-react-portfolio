@@ -4,7 +4,7 @@ import { FaHome} from 'react-icons/fa';
 
 const Footer = () => {
     return ( 
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-5 bg-col2 py-5 mt-10 border-2 border-col2 justify-items-center">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-5 bg-col2 py-5 mt-10 justify-items-center">
                 <div>
                     <h3 className=" text-col3 font-bold uppercase">Get in touch</h3>
                     <div className="grid grid-cols-3  gap-5 pt-2 items-center text-col3">
