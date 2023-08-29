@@ -1,21 +1,27 @@
 import Footer from "./footer";
 import NodeProjects from "./projects/node_project";
+import { useTypewriter , Cursor} from "react-simple-typewriter";
 const Project = () => {
-
+  const [text] = useTypewriter({
+    words: ["All About My Projects"],
+    loop: {},
+    typeSpeed: 200,
+    deleteSpeed : 200
+  })
 
   return (
     <div>
       <div className="grid lg:grid-cols-2 sm:grid-cols-1  justify-items-center lg:px-40 lg:py-10 sm:px-20 sm:py-3">
         <div class="max-w-xs mx-auto bg-white border-2 border-col7 shadow-md rounded-full overflow-hidden">
           <img
-            src="../avatar.jpg"
+            src="../avatar4.png"
             alt="Image"
             class="w-full h-full object-cover"
           />
         </div>
         <div className="py-[25%]">
           <h2 className="text-col7 navbar text-2xl font-bold uppercase text-center">
-            All about my projects
+            {text}<Cursor/>
           </h2>
           <p className="text-col3 text-center  px-2 navbar">
              Welcome to my Tech Stack Portfolio Showcase, where I proudly present
