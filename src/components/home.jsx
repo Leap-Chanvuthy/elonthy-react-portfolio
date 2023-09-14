@@ -4,6 +4,7 @@ import {FaNode} from 'react-icons/fa';
 import {SiExpress} from 'react-icons/si';
 import {BiLogoMongodb} from 'react-icons/bi';
 import { useTypewriter , Cursor} from "react-simple-typewriter";
+import AboutMe from "./aboutme";
 import Footer from "./footer";
 const Home = () => {
     const [text] = useTypewriter({
@@ -41,6 +42,9 @@ const Home = () => {
                         <li><a href="https://t.me/Elon_Thy" className="text-col1 bg-col7 px-7 rounded-md">HIRE ME</a></li>
                     </ul>
                 </div>
+            </div>
+            <div>
+                <AboutMe/>
             </div>
             <Footer/>
         </div>

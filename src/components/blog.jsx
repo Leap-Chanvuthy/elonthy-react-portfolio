@@ -1,5 +1,6 @@
 import Footer from '../components/footer';
 import { useTypewriter , Cursor} from "react-simple-typewriter";
+import { Scrollbar } from 'react-scrollbars-custom';
 const Blog = () => {
 
   const [text] = useTypewriter({
@@ -28,8 +29,9 @@ const Blog = () => {
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2 text-col7 navbar">React.JS</div>
-              <p className="text-col2 text-base overflow-hidden overflow-ellipsis h-16">
-              React.JS is JavaScript library for building user interfaces (UIs). It was developed and is maintained by Facebook and a community of developers. React is widely used for creating dynamic and interactive web applications, especially single-page applications (SPAs).
+              <p className="text-col2 text-base overflow-y-scroll overflow-ellipsis h-40">
+              React.js is a JavaScript library for building user interfaces. It is declarative, efficient, and flexible, and it is used by millions of developers around the world to build websites, web applications, and even mobile applications using React Native.
+              I have extensive experience with React.js. I have used it to build a variety of projects, including my own portfolio website, a web application for managing a team's workload, and a mobile application for displaying real-time data from a database. I have also used React.js to build reusable components that can be shared across different projects.
               </p>
             </div>
           </div>
@@ -43,8 +45,9 @@ const Blog = () => {
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2 text-col7 navbar">Node.JS</div>
-              <p className="text-col2 text-base overflow-hidden overflow-ellipsis h-16">
-              Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser. It was developed by Ryan Dahl and is built on the V8 JavaScript engine, which is the same engine that powers Google Chrome's JavaScript execution.
+              <p className="text-col2 text-base overflow-y-scroll overflow-ellipsis h-40">
+              Node.js REST APIs with JWT are a secure and efficient way to build and deploy web applications. Node.js is a lightweight and scalable JavaScript runtime environment, and REST APIs are a popular style of API that is easy to use and understand. JWT, or JSON Web Tokens, are a secure way to authenticate users and authorize access to resources.
+              I have experience with building and deploying Node.js REST APIs with JWT in a variety of settings. I have used this technology to build APIs for user authentication and authorization, as well as APIs for managing data and business logic. I have also used Node.js REST APIs with JWT to integrate with other systems, such as databases and payment processors.
               </p>
             </div>
           </div>
@@ -58,8 +61,9 @@ const Blog = () => {
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2 text-col7 navbar">MERN Stack</div>
-              <p className="text-col2 text-base overflow-hidden overflow-ellipsis h-16">
-              The MERN stack is a popular technology stack used for building modern web applications. It consists of four main components: MongoDB, Express.js, React.js, and Node.js. Each of these technologies plays a specific role in the development process, collectively providing a full-stack framework for building robust and dynamic web applications.
+              <p className="text-col2 text-base overflow-y-scroll overflow-ellipsis h-40">
+              The MERN Stack is a popular choice for web development because it is fast, scalable, and easy to use. It is also a good choice for beginners because all of the technologies in the MERN Stack are JavaScript-based, which means that developers only need to learn one language.
+              I have experience with building and deploying MERN Stack applications in a variety of settings. I have used this technology to build websites, web applications, and even mobile applications using React Native. I have also used the MERN Stack to integrate with other systems, such as databases and payment processors.
               </p>
             </div>
           </div>
