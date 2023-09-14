@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadLink from "react-download-link";
 import {BiLogoJavascript , BiLogoReact , BiLogoHtml5 , BiLogoTailwindCss} from 'react-icons/bi';
 import {FaNode} from 'react-icons/fa';
 import {SiExpress} from 'react-icons/si';
@@ -7,6 +8,7 @@ import { useTypewriter , Cursor} from "react-simple-typewriter";
 import AboutMe from "./aboutme";
 import Footer from "./footer";
 const Home = () => {
+    const cv_filename = "Leap_Chanvuthy_CV.pdf";
     const [text] = useTypewriter({
         words: ["Software Developer" , "Frontend Developer" , "Backend Developer" , "Fullstack Developer"],
         loop: {},
@@ -38,9 +40,16 @@ const Home = () => {
                         <li className=" text-col7 text-4xl"><SiExpress/></li>
                         <li className=" text-col7 text-4xl"><BiLogoMongodb/></li>
                     </ul>
-                    <ul className="py-4 flex gap-4">
-                        <li><a href="https://t.me/Elon_Thy" className="text-col1 bg-col7 px-7 rounded-md">HIRE ME</a></li>
-                    </ul>
+                    <div className="py-4 flex gap-4">
+                        <div className="text-col1 bg-col7 px-7 rounded-md"><a href="https://t.me/Elon_Thy" >HIRE ME</a></div>
+                        <div className="text-col1 bg-col7 px-7 rounded-md text-decoration-none">
+                            <DownloadLink
+                                    label="Download CV"
+                                    filename={cv_filename}
+                                    exportFile={() => "/public/Leap_Chanvuthy_CV.pdf"}
+                                />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
