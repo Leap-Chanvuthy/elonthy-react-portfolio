@@ -29,7 +29,7 @@ const AboutMe = () => {
                 <div className=' hover:bg-col2 px-8 py-10 flex flex-col justify-center items-center gap-2 border-2 border-col7 rounded-md'>
                     <LuCode2 className='text-2xl'/>
                     <h2 className='navbar'>Coding</h2>
-                    <p className='text-center'>I spent most of my day coding from moring to evening . Coding make me challenge with problem and make me having strong problem solving skill.</p>
+                    <p className='text-center'>I spent most of my day coding from morning to evening . Coding encourage me challenge with problem and gain strong problem solving skill.</p>
                 </div>
             </div>
 

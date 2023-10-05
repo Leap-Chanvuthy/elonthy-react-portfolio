@@ -7,6 +7,7 @@ import {BiLogoMongodb} from 'react-icons/bi';
 import { useTypewriter , Cursor} from "react-simple-typewriter";
 import AboutMe from "./aboutme";
 import Footer from "./footer";
+import ChatbotIcon from "./chatbots/ChatIcon";
 const Home = () => {
     const cv_filename = "Leap_Chanvuthy_CV.pdf";
     const [text] = useTypewriter({
@@ -41,8 +42,8 @@ const Home = () => {
                         <li className=" text-col7 text-4xl"><BiLogoMongodb/></li>
                     </ul>
                     <div className="py-4 flex gap-4">
-                        <div className="text-col1 bg-col7 px-7 rounded-md"><a href="https://t.me/Elon_Thy" >HIRE ME</a></div>
-                        <div className="text-col1 bg-col7 px-7 rounded-md text-decoration-none">
+                        <div className="border-2 border-col7 px-7 py-2 text-col7 rounded-md"><a href="https://t.me/Elon_Thy" >HIRE ME</a></div>
+                        <div className="border-2 border-col7 px-7 py-2 text-col7 rounded-md">
                             <DownloadLink
                                     label="Download CV"
                                     filename={cv_filename}
@@ -55,6 +56,7 @@ const Home = () => {
             <div>
                 <AboutMe/>
             </div>
+                <ChatbotIcon />
             <Footer/>
         </div>
      );
