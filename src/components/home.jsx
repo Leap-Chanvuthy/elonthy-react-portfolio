@@ -1,5 +1,4 @@
 import React from "react";
-import DownloadLink from "react-download-link";
 import {BiLogoJavascript , BiLogoReact , BiLogoHtml5 , BiLogoTailwindCss} from 'react-icons/bi';
 import {FaNode} from 'react-icons/fa';
 import {SiExpress} from 'react-icons/si';
@@ -9,7 +8,7 @@ import AboutMe from "./aboutme";
 import Footer from "./footer";
 import ChatbotIcon from "./chatbots/ChatIcon";
 const Home = () => {
-    const cv_filename = "Leap_Chanvuthy_CV.pdf";
+    const file_url = "/public/Leap_Chanvuthy_CV.pdf"
     const [text] = useTypewriter({
         words: ["Software Developer" , "Frontend Developer" , "Backend Developer" , "Fullstack Developer"],
         loop: {},
@@ -43,13 +42,7 @@ const Home = () => {
                     </ul>
                     <div className="py-4 flex gap-4">
                         <div className="border-2 border-col7 px-7 py-2 text-col7 rounded-md"><a href="https://t.me/Elon_Thy" >HIRE ME</a></div>
-                        <div className="border-2 border-col7 px-7 py-2 text-col7 rounded-md">
-                            <DownloadLink
-                                    label="Download CV"
-                                    filename={cv_filename}
-                                    exportFile={() => "/public/Leap_Chanvuthy_CV.pdf"}
-                                />
-                        </div>
+                        <div className="border-2 border-col7 px-7 py-2 text-col7 rounded-md cursor-pointer"><a href={file_url} download="Leap_Chanvuthy_CV.pdf">Download CV</a></div>
                     </div>
                 </div>
             </div>
